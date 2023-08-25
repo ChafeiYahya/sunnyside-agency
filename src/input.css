@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.navbar-hide {
+    transform: scale();
+    scale : 0;
+    translate: 50% -60%; 
+}
+
+.navbar-show{
+    scale : 1;
+}
+
+svg{
+    color: white;
+}
+
+.title{
+    font-size: clamp( 2.7em , 12vw , 20em);
+}
+
+h4 , .h4{
+    font-size: clamp(1.5em , 9vw , 5em);
+}
+
+.casual-text{
+    font-size: clamp(0.4em , 4.5vw , 2.2em);
+}
+
+.link{
+    font-size: clamp(0.2em , 4.2vw , 2.5em);
+}
+
+.client-position{
+    font-size: clamp(0.15em , 3vw , 2em);
+}
+
+.icons{
+    max-width: 50px;
+    max-height: 50px;
+}
+
+@media  screen and (min-width: 768px) {
+
+    .title{
+        font-size: clamp( 1em , 4vw , 10em);
+    }
+    
+    h4 , .h4{
+        font-size: clamp(0.5em , 3vw , 4em);
+    }
+    
+    .casual-text{
+        font-size: clamp(0.6em , 1vw , 5em);
+    }
+    
+    .link{
+        font-size: clamp(0.2em , 1vw , 2em);
+    }
+    
+    .client-position{
+        font-size: clamp(0.15em , 1vw , 2em);
+    }
+    
+    .icons{
+        max-width: 50px;
+        max-height: 50px;
+    }
+    
+}
